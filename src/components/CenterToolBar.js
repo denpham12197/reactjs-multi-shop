@@ -16,7 +16,11 @@ export default function CenterToolBar() {
           </div>
           <div className="center-toolbar__center">
             <div className="center__search-input">
-              <input placeholder="Search for product" type="text" className="center__search-input--input" />
+              <input
+                placeholder="Search for product"
+                type="text"
+                className="center__search-input--input"
+              />
               <button className="center__search-input--button">Search</button>
             </div>
           </div>
