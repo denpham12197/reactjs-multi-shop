@@ -1,20 +1,7 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import "./../assets/css/style.scss";
-
-function useClickOutside(ref, setState) {
-  useEffect(() => {
-    function handClick(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setState(false);
-      }
-    }
-    document.addEventListener("mousedown", handClick);
-    return () => {
-      document.removeEventListener("mousedown", handClick);
-    };
-  }, [ref, setState]);
-}
+import {useClickOutside} from './../commons/function';
 
 export default function TopToolBar() {
   const refAuthor = useRef(null);
