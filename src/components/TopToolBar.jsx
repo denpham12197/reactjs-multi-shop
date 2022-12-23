@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-import "./../assets/css/style.scss";
-import {useClickOutside} from './../commons/function';
+import {useClickOutside} from '../commons/function';
 
 export default function TopToolBar() {
   const refAuthor = useRef(null);

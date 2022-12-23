@@ -3,6 +3,7 @@ import './App.css';
 import "./fontawasome.js"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import IndexPage from './pages/IndexPage';
+import './assets/css/style.scss';
 
 function App() {
   return (

@@ -2,7 +2,17 @@
 import { library } from '@fortawesome/fontawesome-svg-core'; 
 
 //Import các icon mà bạn muốn sử dụng trong từng gói
-import { faCode, faHighlighter, faBars } from '@fortawesome/free-solid-svg-icons';  
+import { 
+    faBars, 
+    faHeart,
+    faShoppingCart,
+    faSearch
+    } from '@fortawesome/free-solid-svg-icons';  
 
 //Add các icon đã được import vào trong thư viện của bạn
-library.add( faCode, faHighlighter, faBars )
+library.add( 
+    faBars, 
+    faHeart,
+    faShoppingCart,
+    faSearch
+)

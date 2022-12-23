@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
-import { useClickOutside } from "./../commons/function";
+import { useClickOutside } from "../commons/function";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./../assets/css/style.scss";
 import { Link } from "react-router-dom";
 
 export default function BottomToolBar() {
@@ -50,7 +49,7 @@ export default function BottomToolBar() {
           </div>
           <div className="bottom-toolbar__menu-pattern--right-side">
             <ul className="right-pattern__menu-item--left-side">
-              <li className="menu-pattern__menu-item--link menu-pattern__menu-item--active">
+              <li>
                 <Link
                   className="menu-pattern__menu-item--link menu-pattern__menu-item--active"
                   to={"#"}
@@ -58,30 +57,40 @@ export default function BottomToolBar() {
                   Home
                 </Link>
               </li>
-              <li className="menu-pattern__menu-item--link">
+              <li>
                 <Link className="menu-pattern__menu-item--link" to={"#"}>
                   Shop
                 </Link>
               </li>
-              <li className="menu-pattern__menu-item--link">
+              <li>
                 <Link className="menu-pattern__menu-item--link" to={"#"}>
                   Shop Detail
                 </Link>
               </li>
-              <li className="menu-pattern__menu-item--link arrow-dropdown">
-                <Link className="menu-pattern__menu-item--link" to={"#"}>
+              <li className="menu-pattern__menu-item--wrapper">
+                <Link className="menu-pattern__menu-item--link menu-pattern__menu-item--dropdown arrow-down--white" to={"#"}>
                   Pages
                 </Link>
+                <ul className="menu-item__dropdown-box--hover">
+                  <li className="menu-item__dropdown-item--link">Shopping Cart</li>
+                  <li className="menu-item__dropdown-item--link">Checkout</li>
+                </ul>
               </li>
-              <li className="menu-pattern__menu-item--link">
+              <li>
                 <Link className="menu-pattern__menu-item--link" to={"#"}>
                   Contact
                 </Link>
               </li>
             </ul>
             <div className="right-pattern__menu-item--right-side">
-              <div className="right-pattern__item"></div>
-              <div className="right-pattern__item"></div>
+              <div className="right-pattern__item">
+                <FontAwesomeIcon className="right-pattern__icon" icon="fa-solid fa-heart" />
+                <span className="right-pattern__number">0</span>
+              </div>
+              <div className="right-pattern__item">
+                <FontAwesomeIcon className="right-pattern__icon" icon="fa-solid fa-shopping-cart" />
+                <span className="right-pattern__number">0</span>
+              </div>
             </div>
           </div>
         </div>

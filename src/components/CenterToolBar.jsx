@@ -1,5 +1,5 @@
 import React from "react";
-import "./../assets/css/style.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CenterToolBar() {
   return (
@@ -21,7 +21,9 @@ export default function CenterToolBar() {
                 type="text"
                 className="center__search-input--input"
               />
-              <button className="center__search-input--button">Search</button>
+              <button className="center__search-input--button">
+                <FontAwesomeIcon className="center__search-button-icon--search" icon="fa-solid fa-search" />
+              </button>
             </div>
           </div>
           <div className="center-toolbar__right-side">
