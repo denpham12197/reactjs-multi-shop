@@ -180,6 +180,7 @@
     .toolbar__wrapper-toolbar--flud-center {
         align-items: center;
     }
+    z-index: 100;
 }
 .bottom-toolbar__menu-pattern--left-side {
     display: flex;
@@ -247,6 +248,7 @@
     border: 1px solid $main-bg-color;
     animation: fadeIn 1s ease-in both;
     animation-delay: 4s;
+    z-index: 1000;
 }
 .dropdown-panel__container {
     display: flex;
@@ -321,6 +323,7 @@
     box-sizing: border-box;
     display: none;
     flex-direction: column;
+    background-color: $sub-bg-color;
 }
 .dropright-panel__item {
     padding: 10px 30px;
@@ -353,6 +356,7 @@
     padding: 5px 0;
     flex-direction: column;
     display: none;
+    z-index: 1000;
 }
 .menu-item__dropdown-item--link {
     white-space: nowrap;

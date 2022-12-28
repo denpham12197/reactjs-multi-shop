@@ -1,0 +1,35 @@
+@import 'constant';
+
+.feature__container--full-screen {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+.feature__container--flud {
+    display: flex;
+    width: $body-width-flud;
+    justify-content: space-between;
+    gap: 30px;
+}
+.feature__feature-item--wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    background-color: $sub-bg-color;
+}
+.feature__feature-item--box {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.feature-image {
+    color: #FFD333;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.feature-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
