@@ -43,7 +43,9 @@ export default function Slider() {
           <div className="left-pattern__slider-wrapper">
             {listSlider.map((sliderItem, index) => {
               return (
-                <>
+                <div style={{
+                  overflow: 'hidden'
+                }} key={index}>
                   {index === slider && (
                     <div className="slider-item__slider-item-wrapper">
                       <div className="slider-item__image--background">
@@ -65,7 +67,7 @@ export default function Slider() {
                       </div>
                     </div>
                   )}
-                </>
+                </div>
               );
             })}
 

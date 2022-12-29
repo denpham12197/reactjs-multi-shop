@@ -1,0 +1,71 @@
+@import "constant";
+
+$category-padding: 15px;
+
+.categories__container--full-screen {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.categories__container--flud {
+  width: calc($body-width-flud + 30px);
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__list-categories--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.categories__box-categories--spacer {
+  flex-basis: 25%;
+}
+.categories__box-categories--padding {
+  padding: $category-padding;
+}
+.categories__box-categories {
+	cursor: pointer;
+  display: flex;
+  background-color: $sub-bg-color;
+  height: 100px;
+}
+.categories__box-categories:hover {
+	background-color: $second-primary-color;
+	.category__image img {
+		transform: rotate(4deg);
+		scale: 1.2;
+	}
+
+}
+.category__image {
+	overflow: hidden;
+  img {
+    max-height: 100%;
+		transition: all .3s ease-in-out;
+  }
+}
+.category__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px;
+	padding: 15px;
+}
+.category-content__category-name {
+  h5 {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+.category-content__quantity {
+  small {
+    color: $text-blur-color;
+    font-size: 80%;
+    font-weight: 400;
+  }
+}
