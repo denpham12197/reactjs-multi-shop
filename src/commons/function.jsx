@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+// Click out side element
 function useClickOutside(ref, setState) {
   useEffect(() => {
     function handClick(event) {
@@ -14,6 +15,12 @@ function useClickOutside(ref, setState) {
   }, [ref, setState]);
 }
 
+// Check number is float or integer
+function isInt(number) {
+  return Number(number) === number && number % 1 === 0;
+}
+
 export {
-	useClickOutside
+	useClickOutside,
+  isInt
 }
